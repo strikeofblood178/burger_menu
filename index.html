@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/hamburger.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="#" class="logo">RELAP</a>
+
+      <nav class="nav">
+        <a href="#" class="nav__link">Home</a>
+        <a href="#" class="nav__link">Features</a>
+        <a href="#" class="nav__link">Works</a>
+        <a href="#" class="nav__link">About</a>
+        <a href="#" class="nav__link">People</a>
+        <a href="#" class="nav__link">News</a>
+        <a href="#" class="nav__link nav_button">Contact us</a>
+      </nav>
+
+      <button class="hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+<section class="section">
+  <div class="section_container">
+   <div class="section_container_img">
+     <img class="section_container_img_sr" src="./img/Path.png" alt="">
+    </div>
+    <div class="section_container_box1">
+      <p class="section_container_box1_text1 text_margin">Alias consequatur</p>
+      <p class="section_container_box1_text2 text_margin">Voluptatibus <br> maiores</p>
+      <p class="section_container_box1_text3 text_margin">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe <br> eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+      <button class="section_container_box1_text4 text_margin">Explore</button>
+    </div>
+    <div class="section_container_box2">
+    
+      <img class="section_container_box2_img" src="./img/Loud Speaker.png" alt="">
+      
+    </div>
+    <div class="section_container_img">
+      <img class="section_container_img_sr" src="./img/Path (1).png" alt="">
+    </div>
+  </div>
+</section>
+
+
+  
+
+  <script>
+    // Look for .hamburger
+    var hamburger = document.querySelector(".hamburger");
+
+    var nav = document.querySelector(".nav");
+    // On click
+    hamburger.addEventListener("click", function () {
+      // Toggle class "is-active"
+      hamburger.classList.toggle("is-active");
+
+      nav.classList.toggle("is-active");
+      // Do something else, like open/close menu
+    });
+  </script>
+
+</body>
+
+</html>
